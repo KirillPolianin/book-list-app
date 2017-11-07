@@ -23,10 +23,8 @@ class BookList extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    books: state.books
-  };
+function mapStateToProps({ books }) {
+  return { books };
 }
 
 function mapDispatchToProps(dispatch) {
